@@ -1,5 +1,5 @@
-# a prime number is only divisible by 1 and itself
-# did not code this... One to return to if time...
+#prime no is only divisible by 1 and itself
+# did not code this.. need to revisit if time
 
 def prime?(number)
   if number >= 2
@@ -10,4 +10,13 @@ def prime?(number)
     return false
   end
 end
+
+def prime?(number)
+  (2..number). each do |divisor|
+    if number % divisor == 0 
+      return TRUE
+    else
+      return FALSE
+    end
+  end
 
